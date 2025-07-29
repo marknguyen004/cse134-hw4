@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mark"s Website</title>
+
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="index.css">
+
+</head>
+<body>
+
+  <header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="resume.html">Resume</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="form-no-js.html">Contact (No JS) </a>
+      <a href="form-with-js.html">Contact (With JS) </a>
+      <a href="faq.html">FAQ</a>
+      <button id="theme-toggle" aria-label="Toggle theme">
+        <span class="icon"></span>
+      </button>
+      <noscript>
+        <p class="no-js-warning">Theme switcher requires JavaScript to function properly</p>
+      </noscript>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <header>
+        <hr>
+        <h1>Mark’s Website</h1>
+        <hr>
+      </header>
+    </section>
+
+    <section class="about-section">
+      <article>
+        <h2>About Me</h2>
+        <p>
+          I’m a Math‑Computer Science student at UC San Diego who loves blending algebra and discrete math
+          with real‑world coding projects. Whether proving a theorem or optimizing an algorithm, I thrive on
+          tackling tough challenges and learning new techniques in both theory and practice.
+        </p>
+      </article>
+      <picture>
+        <img src="image/IMG_2841.jpg" alt="Personal photo of Mark">
+      </picture>
+    </section>
+    <div class="guide-sections">
+      <section>
+        <h2>Explore My Resume</h2>
+        <p>Dive into my education, experience, and skills in detail.</p>
+        <a href="resume.html" class="button">View Resume</a>
+      </section>
+      <section>
+        <h2>Get In Touch</h2>
+        <p>Let's Collaborate!</p>
+        <a href="contact.html" class="button">Contact Me</a>
+      </section>
+    </div>
+  </main>
+  <script src="theme.js"></script>
+</body>
+</html>

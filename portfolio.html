@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mark - Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="portfolio.css">
+</head>
+
+
+<body>
+
+  <header>
+    <div class="nav-wrapper">
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="resume.html">Resume</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="form-no-js.html">Contact (No JS) </a>
+        <a href="form-with-js.html">Contact (With JS) </a>
+        <a href="faq.html">FAQ</a>
+        <button id="theme-toggle" aria-label="Toggle theme">
+          <span class="icon"></span>
+        </button>
+        <noscript>
+          <p class="no-js-warning">Theme switcher requires JavaScript to function properly</p>
+        </noscript>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <header>
+        <hr>
+        <h1>Portfolio</h1>
+        <hr>
+      </header>
+    </section>
+
+    <div class="portfolio-content">
+      <section>
+        <h2>Projects</h2>
+
+        <table>
+          <colgroup>
+            <col span="1" style="width: 50%;">
+            <col span="1" style="width: 50%;">
+          </colgroup>
+          <thead>
+            <tr>
+              <th>Project</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Hello World</td>
+              <td>Print <code>"Hello World"</code> in C++</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h3>Source Code</h3>
+        <pre><code>
+#include &lt;iostream&gt;
+
+int main() {
+    std::cout &lt;&lt; "Hello World" &lt;&lt; std::endl;
+    return 0;
+}
+        </code></pre>
+
+        <h3><span class="section-title">Sample Output</span></h3>
+        <blockquote>
+          <span class="output-block">Hello World</span>
+        </blockquote>
+      </section>
+    </div>
+  </main>
+  <script src="theme.js"></script>
+</body>
+</html>

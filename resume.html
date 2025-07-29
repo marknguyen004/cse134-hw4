@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mark – Resume</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="resume.css">
+
+</head>
+<body>
+
+  <header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="resume.html">Resume</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="form-no-js.html">Contact (No JS) </a>
+      <a href="form-with-js.html">Contact (With JS) </a>
+      <a href="faq.html">FAQ</a>
+      <button id="theme-toggle" aria-label="Toggle theme">
+        <span class="icon"></span>
+      </button>
+      <noscript>
+        <p class="no-js-warning">Theme switcher requires JavaScript to function properly</p>
+      </noscript>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <header>
+        <hr>
+        <h1>Resume</h1>
+        <hr>
+      </header>
+    </section>
+
+    <section>
+      <h2>Education</h2>
+      <dl>
+        <dt>
+          <strong>De Anza College</strong>
+          <abbr title="Aug 2022 – Jun 2024">Aug 2022 – Jun 2024</abbr>
+          <address>21250 Stevens Creek Blvd, Cupertino, CA 95014</address>
+          <picture>
+            <img src="image/deanzacollege.jpg" alt="De Anza College">
+          </picture>
+        </dt>
+        <dd>
+          <p>Major in Computer Science.</p>
+          <p>Relevant Coursework:</p>
+          <ul>
+            <li>Computing in Python</li>
+            <li>Computing in C++</li>
+            <li>Discrete Mathematics</li>
+            <li>Data Structures and Algorithms</li>
+            <li>Assembly Language</li>
+            <li>Physics</li>
+          </ul>
+        </dd>
+        <dt>
+          <strong>University of California, San Diego</strong>
+          <abbr title="Expected June 2026">Expected Jun 2026</abbr>
+          <address>9500 Gilman Dr, La Jolla, CA 92093</address>
+          <picture>
+            <img src="image/ucsdgiesel.jpg" alt="Giesel Library">
+          </picture>
+        </dt>
+        <dd>
+          <p>Bachelor of Science in Math–Computer Science.</p>
+          <p>Relevant Coursework:</p>
+          <ul>
+            <li>Mathematical Reasoning</li>
+            <li>Abstract Algebra</li>
+            <li>C Programming</li>
+            <li>Mathematics for Algorithms and Systems</li>
+            <li>Advanced Data Structures</li>
+          </ul>
+        </dd>
+      </dl>
+    </section>
+
+    <experience-section>
+      <h2>Experience</h2>
+      <article>
+        <h3>
+          <strong>Occupational Training Institute at De Anza College</strong>
+          <abbr title="Sep 2022 – Jun 2023">Sep 2022 – Jun 2023</abbr>
+        </h3>
+        <ul>
+          <li>Assembled computers and installed software</li>
+          <li>Refurbished old computers for disadvantaged students</li>
+        </ul>
+      </article>
+      <article>
+        <h3>
+          <strong>CIS 22A (Intro to C++ Programming)</strong>
+          <abbr title="Sep 2023 – Dec 2023">Sep 2023 – Dec 2023</abbr>
+        </h3>
+        <ul>
+          <li><dfn>Teacher Assistant</dfn> — helped students learn how to code in C++</li>
+        </ul>
+      </article>
+    </experience-section>
+
+    <skills-section>
+      <h2>Skills &amp; Interests</h2>
+      <picture>
+        <img src="image/skills.png" alt="Skilss Icon">
+      </picture>
+      <div>
+        <details>
+          <summary>Programming Languages</summary>
+          <ul>
+            <li>C++</li>
+            <li>Python</li>
+            <li>Java</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+          </ul>
+        </details>
+
+        <details>
+          <summary>Technical Skills</summary>
+          <ul>
+            <li>Microsoft Office</li>
+            <li>Data Structures &amp; Algorithms</li>
+            <li>Assembly Language</li>
+          </ul>
+        </details>
+
+        <details>
+          <summary>Languages</summary>
+          <ul>
+            <li>English</li>
+            <li>Vietnamese</li>
+          </ul>
+        </details>
+
+        <details>
+          <summary>Interests</summary>
+          <ul>
+            <li>Table Tennis</li>
+            <li>Soccer</li>
+            <li>Automotive &amp; Motorsports</li>
+          </ul>
+        </details>
+      </div>
+    </skills-section>
+
+  </main>
+  <script src="theme.js"></script>
+</body>
+</html>

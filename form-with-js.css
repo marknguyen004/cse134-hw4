@@ -1,0 +1,147 @@
+.contact-info {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+
+    h2 {
+        text-align: center;
+        color: rgb(24, 99, 198);
+        margin-bottom: 1rem;
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 1.1rem;
+        line-height: 1.6;
+        margin: 0.75rem 0;
+    }
+
+    a {
+        color: rgb(22, 129, 196);
+        text-decoration: none;
+        border-bottom: 1px dashed rgb(22, 129, 196);
+        transition: border-bottom-color 0.2s;
+
+        &:hover {
+        border-bottom-color: transparent;
+        }
+    }
+}
+
+
+.contact-form {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: rgb(224, 244, 255);
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+
+    h2 {
+        text-align: center;
+        color: rgb(24, 99, 198);
+        margin-bottom: 1rem;
+        font-size: 1.5rem;
+    }
+
+
+    form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem 2rem;
+
+        label {
+            display: block;
+            font-weight: bold;
+            color: rgb(24, 99, 198);
+            margin-bottom: 0.5rem;
+
+        }
+
+        input {
+            width: 100%;
+            padding: 0.5rem;
+            border: 1px solid rgb(200, 200, 200);
+            border-radius: 4px;
+            font-size: 1rem;
+            
+        }
+
+        textarea#comments {
+            grid-column: 1 / span 2;
+            min-height: 6rem;  
+            resize: vertical;     
+            padding: 0.5rem;
+            border: 1px solid rgb(12, 11, 11);
+            border-radius: 4px;
+            font-family: inherit;
+            font-size: 1rem;
+        }
+
+        button {
+            grid-column: 1 / span 2;
+            padding: 0.75rem;
+            background: rgb(22, 129, 196);
+            color: white;
+            font-size: 1rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background 0.2s;
+            margin-top: 1rem;
+
+            &:hover {
+                background: rgb(0, 95, 153);
+            }
+        }
+
+        .error, .phone-error {
+            display: block;
+            margin-top: 0.25rem;
+            height: 1rem;
+            color: rgb(149, 0, 0);
+            font-size: 0.8rem;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+        .error.active, .phone-error.active {
+            opacity: 1;
+        }
+
+        .counter {
+            grid-column: 1 / span 2;
+            font-size: 0.9rem;
+            text-align: right;
+            margin-bottom: 0.5rem;
+            color: gray;
+            transition: color 0.3s;
+        }
+        .counter.warn { 
+            color: orange; 
+        }
+        .counter.error { 
+            color: red; 
+        }
+
+        input.flash, textarea.flash {
+            animation: flash-border 0.4s ease;
+        }
+
+        span.error, span.phone-error {
+            display: block;
+            margin-top: 0.25rem;
+            grid-column: 2;
+        }
+    }
+}
+
+@keyframes flash-border {
+    from { 
+        border-color: rgb(139, 0, 0); 
+    }
+    to { 
+        border-color: rgb(200, 200, 200); 
+    }
+}

@@ -1,0 +1,52 @@
+.faq-section {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background: lightgrey;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px grey;
+
+    h2 {
+        text-align: center;
+        color: rgb(79, 120, 202);
+        margin-bottom: 1.5rem;
+    }
+
+    dl {
+        display: grid;
+        row-gap: 0.5rem;
+
+        dt {
+        background: white;
+        padding: 0.75rem 1rem;
+        border-left: 4px solid red;
+        border-radius: 4px;
+        }
+
+        dd {
+        margin: 0 0 1rem 0;
+        padding: 0.75rem 1rem;
+        background: white;
+        border: 1px solid black;
+        border-radius: 4px;
+        line-height: 1.6;
+        }
+    }
+
+}
+
+
+.dark {
+    .faq-section {
+        background: darkblue;
+        h2 {
+            color: white;
+        }
+        dt {
+            background: rgb(46, 46, 180);
+        }
+        dd {
+            background: black;
+        }
+    }
+}

@@ -1,0 +1,30 @@
+table, td, th{
+    border: 1px solid black;
+}
+
+
+.output-block {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: .1em solid black;
+    animation:
+        typing 4s steps(11) forwards,
+        blink 1s step-end infinite alternate;
+}
+
+@keyframes typing {
+    from { 
+        width: 0; 
+    }
+    to{ 
+        width: 100%; 
+    }
+}
+
+@keyframes blink {
+    50% { 
+        border-color: transparent; 
+    }
+}
+

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mark – FAQ</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="faq.css">
+</head>
+<body>
+
+  <header>
+    <div class="nav-wrapper">
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="resume.html">Resume</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="form-no-js.html">Contact (No JS) </a>
+        <a href="form-with-js.html">Contact (With JS) </a>
+        <a href="faq.html">FAQ</a>
+        <button id="theme-toggle" aria-label="Toggle theme">
+          <span class="icon"></span>
+        </button>
+        <noscript>
+          <p class="no-js-warning">Theme switcher requires JavaScript to function properly</p>
+        </noscript>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <header>
+        <hr>
+        <h1>
+            FAQ
+            <svg width="24" height="24" aria-hidden="true" role="img">
+            <circle cx="12" cy="12" r="10" stroke="black" fill="none"/>
+            <text x="12" y="15" text-anchor="middle" font-size="12" font-family="Arial">?</text>
+            </svg>
+        </h1>
+        <hr>
+      </header>
+    </section>
+
+    <div class="faq-section">
+      <section>
+        <h2>Frequently Asked Questions</h2>
+        <dl>
+            <dt>What technologies do you work with?</dt>
+            <dd>I primarily use C++ and Java for backend as well as HTML, CSS, and JavaScript for
+                front end.
+            </dd>
+
+            <dt>Describe an instance when you disagreed with a teammate.</dt>
+            <dd>
+                We were working on a project for a data structures class but we were having scheduling
+                issues because not everyone was in town at the time so we had to work towards a solution.
+                One of my teammates suggested that we wouldn't need to meet up at all and everything could
+                be completed through texts but I disagreed. I communicated with my teammate about the problem 
+                so that we both understand what the problem that needs to be addressed. I suggested 
+                that a meeting can happen as long as 2 or more members are available so that we could 
+                communicate better and others can join later. 
+                <em>We eventually reached a mutual agreement and completed the project on time.</em> 
+            </dd>
+
+            <dt>Share an example of a failure or setback.</dt>
+            <dd>When I took my first college calculus class, I was overwhelmed by the workload and
+            the amount of materials so I did not do well on my first midterm and I needed a decent GPA
+            to transfer later. So I decided to fix my study habits, attend office hours, and seek help
+            from tutoring services. In the end, I got an A in the class, which 
+            <strong>proved that thinking of solutions to adapt to a new environment is extremely 
+            important.</strong>
+            </dd>
+        </dl>
+        <template>
+            <h3>I will try my best to answer</h3>
+        </template>
+      </section>
+    </div>
+  </main>
+  <script src="theme.js"></script>
+</body>
+</html>
